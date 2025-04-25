@@ -1,0 +1,87 @@
+.main-header{
+
+    margin-top: 10px;
+    width: 100%;
+    height: 44px;
+}
+
+#nav-horizontal-top{
+    width: 100%;
+    height: 37px;
+    flex-shrink: 0;
+    background: #2F2F2F;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    width: 1200px;
+    margin: 0 auto;
+    height: 48px;
+}
+
+.nav-left{
+    display: flex;
+    list-style: none;
+    gap: 120px;
+    margin: 0;
+    padding: 0;
+
+}
+
+.nav-left a {
+    margin: 0;
+    text-decoration: none;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 41.333px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -2.067px;
+    transition: color 0.3s ease;
+}
+
+.nav-left a:hover {
+    color: yellow;
+}
+
+
+.nav-right a{
+    margin: 0;
+    text-decoration: none;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 41.333px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -2.067px;
+    transition: color 0.3s ease;
+
+}
+
+.nav-right a:hover {
+    color: yellow;
+}
+
+
+#nav-horizontal-bottom{
+    width: 100%;
+    height: 4px;
+    flex-shrink: 0;
+    background: #2F2F2F;
+    margin-bottom: 20px;
+}
+#nav-horizontal-center {
+    width: 100%;
+    height: 4px;
+    background: transparent;
+    transition: background-color 0.3s ease;
+}
+
+#nav-horizontal-center.highlighted {
+    background: yellow;
+}

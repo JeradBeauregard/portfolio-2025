@@ -1,20 +1,20 @@
-const { getDB } = require("../config/db");
+const { getDB } = require("../db");
 const { ObjectId } = require("mongodb");
 
 // GET all case studies
 async function getAllCaseStudies() {
   const db = getDB();
-  return await db.collection("case_studies").find().toArray();
+  return await db.collection("caseStudies").find().toArray();
 }
 
 // GET one case study by ID
 async function getCaseStudyById(id) {
   const db = getDB();
-  return await db.collection("case_studies").findOne({ _id: new ObjectId(id) });
+  return await db.collection("caseStudies").findOne({ _id: new ObjectId(id) });
 }
 
 // CREATE a new case study
-async function createCaseStudy(data) {
+async function createCaseStudy(data) { 
   try {
     const db = getDB();
 
@@ -23,7 +23,7 @@ async function createCaseStudy(data) {
       throw new Error("Missing required fields: title and description");
     }
 
-    const result = await db.collection("case_studies").insertOne(data);
+    const result = await db.collection("caseStudies").insertOne(data);
 
     if (!result.acknowledged) {
       throw new Error("Failed to insert case study");
@@ -43,7 +43,7 @@ async function createCaseStudy(data) {
 // UPDATE an existing case study
 async function updateCaseStudy(id, updateData) {
   const db = getDB();
-  const result = await db.collection("case_studies").updateOne(
+  const result = await db.collection("caseStudies").updateOne(
     { _id: new ObjectId(id) },
     { $set: updateData }
   );
@@ -53,7 +53,7 @@ async function updateCaseStudy(id, updateData) {
 // DELETE a case study
 async function deleteCaseStudy(id) {
   const db = getDB();
-  const result = await db.collection("case_studies").deleteOne({ _id: new ObjectId(id) });
+  const result = await db.collection("caseStudies").deleteOne({ _id: new ObjectId(id) });
   return result.deletedCount > 0;
 }
 

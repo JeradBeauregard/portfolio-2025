@@ -1,0 +1,52 @@
+
+#hero-container{
+
+    width: 1200px;
+    display: flex;
+    gap: 120px;
+    margin: 0 auto;
+    margin-top: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#hero-left{
+
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero-left h1{
+    color: #000;
+font-family: Poppins;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin: 0;
+}
+
+#hero-left p{
+
+color: #000;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin: 0;
+}
+
+#hero-image{
+width: 463px;
+height: 606px;
+flex-shrink: 0;
+aspect-ratio: 563/706;
+}
+
+
+

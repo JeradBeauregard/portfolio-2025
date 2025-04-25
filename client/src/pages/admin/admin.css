@@ -1,0 +1,148 @@
+/* General Layout */
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #f9f9fb;
+    color: #222;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2, h3 {
+    margin-top: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #0066cc;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 16px;
+  }
+  
+  /* List Pages */
+  .case-list,
+  .illustration-list {
+    padding: 24px;
+  }
+  
+  .case-list-header,
+  .illustration-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  
+  .case-card,
+  .illustration-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+  }
+  
+  .thumbnail,
+  .thumb {
+    width: 120px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    background-color: #eee;
+  }
+  
+  /* Info section inside card */
+  .case-info,
+  .illustration-info {
+    flex: 1;
+  }
+  
+  .case-links,
+  .illustration-links {
+    margin-top: 12px;
+    display: flex;
+    gap: 12px;
+  }
+  
+  /* Buttons */
+  .btn {
+    padding: 8px 14px;
+    background: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s;
+  }
+  
+  .btn:hover {
+    background-color: #004999;
+  }
+  
+  .btn.delete {
+    background-color: #cc3333;
+  }
+  
+  .btn.delete:hover {
+    background-color: #a62222;
+  }
+  
+  .btn.new-btn {
+    background-color: #28a745;
+  }
+  
+  .btn.new-btn:hover {
+    background-color: #208837;
+  }
+  
+  /* Forms */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 600px;
+  }
+  
+  input[type="text"],
+  textarea {
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  
+  textarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+  
+  input[type="file"] {
+    margin-top: 6px;
+  }
+  
+  label {
+    font-weight: 500;
+  }
+  
+  /* Confirmation Page */
+  .confirm-delete {
+    background: white;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    max-width: 500px;
+    margin: 40px auto;
+    text-align: center;
+  }
+  
+  .confirm-delete p {
+    margin: 20px 0;
+  }
+  

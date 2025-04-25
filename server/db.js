@@ -7,7 +7,7 @@ let db;
 async function connectDB() {
   try {
     await client.connect();
-    db = client.db(); // defaults to DB name in URI
+    db = client.db("portfolio"); // defaults to DB name in URI
     console.log("MongoDB connected");
   } catch (err) {
     console.error("Failed to connect to MongoDB:", err);
