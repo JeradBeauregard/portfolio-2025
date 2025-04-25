@@ -35,7 +35,7 @@ app.use("/api/illustrations", illustrationsRoutes);
 app.use(express.static(path.join(__dirname, "..", "client", "dist")));
 
 // React Router Fallback: serve index.html for any non-API route
-app.get("*", (req, res) => {
+app.get("/", (req, res) => {
   // If it's an API route, skip (you could refine this if needed)
   if (req.originalUrl.startsWith("/api")) {
     return res.status(404).json({ error: "API route not found." });
