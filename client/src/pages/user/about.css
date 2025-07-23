@@ -1,0 +1,60 @@
+#aboutMain {
+    max-width: 900px;
+    margin: 60px auto 80px auto;
+    padding: 0 20px;
+    line-height: 1.75;
+    color: #222;
+    font-family: 'Inter', sans-serif;
+}
+
+.aboutH1 {
+    font-size: 56px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+.aboutH2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+.aboutP {
+    font-size: 20px;
+    margin-bottom: 32px;
+    color: #333;
+}
+
+/* Optional: Add a soft fade-in animation */
+#aboutMain {
+    animation: fadeIn 0.6s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive tweaks */
+@media screen and (max-width: 768px) {
+    .aboutH1 {
+        font-size: 42px;
+    }
+
+    .aboutH2 {
+        font-size: 28px;
+    }
+
+    .aboutP {
+        font-size: 18px;
+    }
+}

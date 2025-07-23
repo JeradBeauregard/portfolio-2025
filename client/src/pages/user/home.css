@@ -1,3 +1,79 @@
 #body{
-    background-color: white;
+    background-color: rgb(65, 65, 65);
+}
+
+.featuredSection {
+  position: relative;
+  padding: 100px 20px;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.featuredProjectsWrapper {
+  max-width: 1250px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.noProjectsText {
+  color: #ccc;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* Decal styles (reused or custom) */
+.featuredDecals {
+  position: absolute;
+  
+  z-index: 0;
+  pointer-events: none;
+}
+
+.decalTopLeft {
+  top: -40px;
+  left: -60px;
+  width: 300px;
+  height: 300px;
+  background: url("/images/decal-top-left.svg") no-repeat;
+  background-size: contain;
+}
+
+.decalBottomRight {
+  bottom: -60px;
+  right: -40px;
+  width: 300px;
+  height: 300px;
+  background: url("/images/decal-bottom-right.svg") no-repeat;
+  background-size: contain;
+}
+
+.decalZigzag {
+  top: 100px;
+  right: 10%;
+  width: 120px;
+  height: 60px;
+  background: url("/images/decal-zigzag.svg") no-repeat;
+  background-size: contain;
+}
+
+.decalBolt {
+  top: 300px;
+  left: 10%;
+  width: 60px;
+  height: 100px;
+  background: url("/images/decal-bolt.svg") no-repeat;
+  background-size: contain;
+}
+
+.decalStripe {
+  bottom: 140px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 240px;
+  height: 40px;
+  background: url("/images/decal-stripe.svg") no-repeat;
+  background-size: contain;
 }

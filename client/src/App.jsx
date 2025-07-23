@@ -15,6 +15,10 @@ import IllustrationDelete from "./pages/admin/illustrations/delete";
 /* user pages */
 
 import HomePage from "./pages/user/home";
+import AboutPage from "./pages/user/about";
+
+/*front end case study pages*/
+import JimPage from "./pages/user/cases/jim";
 
 function App() {
   return (
@@ -33,6 +37,9 @@ function App() {
         <Route path="/admin/illustration/delete/:id" element={<IllustrationDelete />} />
 
         <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+
+        <Route path="/jim" element={<JimPage />} />
       </Routes>
     </Router>
   );

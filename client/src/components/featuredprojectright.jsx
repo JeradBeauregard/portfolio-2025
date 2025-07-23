@@ -2,18 +2,22 @@ import React from "react";
 import "../../src/font.css";
 import "./featuredprojectright.css";
 
-export default function FeaturedProjectRight({ title, short_description, image_url }) {
+import { Link } from "react-router-dom";
+
+export default function FeaturedProjectRight({ title, short_description, image_url, case_url }) {
   return (
-    <div id="main-container">
-      <div id="inner-container">
-        <div id="container-left">
+    <section className="featuredProject">
+      <div className="featuredInner">
+        <div className="featuredText">
           <h3>{title}</h3>
           <p>{short_description}</p>
         </div>
-        <div id="container-right">
-          <img src={image_url} alt={title} />
+        <div className="featuredImageWrapper">
+          <Link to={case_url}>
+            <img src={image_url} alt={title} />
+          </Link>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

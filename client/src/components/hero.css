@@ -1,52 +1,101 @@
-
-#hero-container{
-
-    width: 1200px;
-    display: flex;
-    gap: 120px;
-    margin: 0 auto;
-    margin-top: 10px;
-    justify-content: space-between;
-    align-items: center;
+.hero {
+  background: #1a1a1a;
+  color: #ffffff;
+  padding: 80px 20px;
+  animation: fadeIn 0.6s ease-out;
 }
 
-#hero-left{
+.heroInner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 64px;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
-    width: 500px;
-    display: flex;
+.heroLeft {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.heroLeft h1 {
+  font-size: 64px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.heroLeft p {
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  color: #ccc;
+  max-width: 600px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.heroButton {
+  display: inline-block;
+  padding: 12px 24px;
+  background: yellow;
+  color: #000;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+  width: fit-content;
+}
+
+.heroButton:hover {
+  background: #fff000;
+}
+
+.heroRight {
+  flex-shrink: 0;
+  width: 400px;
+  max-width: 100%;
+}
+
+.heroRight img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 12px 24px rgba(0,0,0,0.5);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .heroInner {
     flex-direction: column;
-    gap: 55px;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+  }
+
+  .heroLeft h1 {
+    font-size: 42px;
+  }
+
+  .heroLeft p {
+    font-size: 18px;
+  }
+
+  .heroRight {
+    width: 100%;
+  }
 }
-
-#hero-left h1{
-    color: #000;
-font-family: Poppins;
-font-size: 48px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-margin: 0;
-}
-
-#hero-left p{
-
-color: #000;
-font-family: Inter;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-margin: 0;
-}
-
-#hero-image{
-width: 463px;
-height: 606px;
-flex-shrink: 0;
-aspect-ratio: 563/706;
-}
-
-
-

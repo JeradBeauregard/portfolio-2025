@@ -1,71 +1,82 @@
-
-#footer-container{
-    margin-top: 100px;
-    width: 100%;
-    height: 180px;
-    background-color: #2F2F2F;;
-    
-    
+/* === Footer Container === */
+#footer-container {
+  margin-top: 100px;
+  width: 100%;
+  background-color: #1a1a1a;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 60px 20px;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
 }
 
-#footer-inner-container{
-    width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
+/* === Inner Layout === */
+#footer-inner-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+/* === Call-to-Action Button === */
 #hire-btn {
-    position: relative;
-    top: -32.5px; /* Half of 65px height to float it halfway */
-    
-    color: #FFF;
-    font-family: Poppins;
-    font-size: 41.333px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: -2.067px;
-    
-    border-radius: 10px;
-    background: #505050;
-    box-shadow: 0px 16px 16px 0px rgba(0, 0, 0, 0.50);
-    
-    width: 1200px;
-    height: 65px;
-    z-index: 10; /* make sure it’s above */
+  padding: 16px 40px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #333;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+
+#hire-btn:hover {
+  background-color: #444;
+  color: #ffe400;
+}
+
+/* === Navigation Area === */
+#container-bottom {
+  width: 100%;
+}
+
+#nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+}
+
+#nav-list li {
+  margin: 0;
+}
+
+#nav-list a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+#nav-list a:hover {
+  color: #ffe400;
+}
+
+/* === Responsive Handling === */
+@media screen and (max-width: 600px) {
+  #nav-list {
+    flex-direction: column;
+    gap: 16px;
   }
 
-  #hire-btn:hover{
-    color: yellow;
+  #hire-btn {
+    width: 100%;
+    text-align: center;
   }
-  
-
-
-#container-bottom{
-    width: 1200px;
-    margin: 0 auto;
-    
-}
-
-#nav-list{
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#nav-list a{
-    text-decoration: none;
-    color: #FFF;
-font-family: Poppins;
-font-size: 41.333px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-letter-spacing: -2.067px;
-}
-
-#nav-list a:hover{
-    color: yellow;
 }
